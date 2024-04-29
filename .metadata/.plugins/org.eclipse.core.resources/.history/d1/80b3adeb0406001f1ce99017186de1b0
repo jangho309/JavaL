@@ -21,7 +21,6 @@ public class _04_ArrayExample {
 		// 1~100 중 랜덤한 값
 		randomVal = random.nextInt(100) + 1;
 		System.out.println(randomVal);
-		System.out.println("----------------------------");
 		
 		// 2. 자바에서 랜덤 값 생성방법 2: Math 클래스의 Random() 메소드 사용
 		// 0 <= Math.random() < 1 의 실수 값을 랜덤으로 리턴
@@ -34,8 +33,7 @@ public class _04_ArrayExample {
 		// 3. 정수 10개를 저장하는 배열을 생성하고 1~100까지의 랜덤값을 10개 저장하고 출력하세요.
 		int[] numArr = new int[10];
 		for(int i = 0; i < numArr.length; i++) {
-			numArr[i] = (int)(Math.random() * 100) + 1;
-//			numArr[i] = random.nextInt(100) + 1;
+			numArr[i] = (int)(Math.random() * 100 + 1);
 			System.out.println(numArr[i]);
 		}
 	}
