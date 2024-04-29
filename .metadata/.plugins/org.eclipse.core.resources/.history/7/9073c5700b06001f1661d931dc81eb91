@@ -1,0 +1,13 @@
+package homework.basic;
+
+import java.util.Random;
+
+public class basicTest12 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] numArr = new int[10];
+		Random random = new Random();
+	}
+
+}

@@ -1,0 +1,11 @@
+package homework.basic;
+
+public class basicTest11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] ranArr = new int[10];
+		
+	}
+
+}
