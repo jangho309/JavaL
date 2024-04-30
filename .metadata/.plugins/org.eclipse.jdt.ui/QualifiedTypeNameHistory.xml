@@ -4,4 +4,13 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="chap06_method.calc.ReturnCalculator"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="chap06_method.calc.AccessModifierCalculator"/>
+    <fullyQualifiedTypeName name="chap06_method.calc.ParameterCalculator"/>
+    <fullyQualifiedTypeName name="chap06_method.calc.CompleteCalculator"/>
+    <fullyQualifiedTypeName name="chap06_method.game.Lotto"/>
+    <fullyQualifiedTypeName name="chap06_method.score.Score"/>
+    <fullyQualifiedTypeName name="chap06_method.calc.OverloadingCalculator"/>
+    <fullyQualifiedTypeName name="homework02.advance.RockScissPaper"/>
 </qualifiedTypeNameHistroy>
