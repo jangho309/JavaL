@@ -12,7 +12,7 @@ public class middleTest04 {
 		}
 		for(int j = 0; j < numArr.length; j++) {
 			if(j % 2 == 0) {
-				System.out.println((numArr.length - j) + "번째 : " + numArr[(numArr.length - 1) - j]);
+				System.out.println(((numArr.length - 2) - j) + "번째 : " + numArr[(numArr.length - 2) - j]);
 			} else {
 				System.out.println(j + "번째 : " + numArr[j]);
 			}

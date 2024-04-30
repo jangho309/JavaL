@@ -12,12 +12,12 @@ public class advanceTest02 {
 		int inputNum = sc.nextInt();
 		
 		String clap ="박수";
-		int tenNum = (int)(inputNum / 10);
-		int oneNum = inputNum - tenNum;
+		int tenNum = inputNum / 10;
+		int oneNum = inputNum - tenNum * 10;
 		if(tenNum % 3 == 0) {
 			clap += "짝";
 		}
-		if(oneNum %3 == 0) {
+		if(oneNum % 3 == 0) {
 			clap += "짝";
 		}
 		sc.close();
