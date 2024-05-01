@@ -11,21 +11,13 @@ public class RockScissPaper {
 	// 사용자가 3을 입력하면 게임이 종료되면서 몇전 몇승 몇무 몇패인지 출력하세요.
 	
 	private Scanner sc = new Scanner(System.in);
-
 	private Random rd = new Random();
-
-	
 
 	private boolean isExit = false;
 
-	
-
 	private int gameCnt = 0;
-
 	private int winCnt = 0;
-
 	private int drawCnt = 0;
-
 	private int loseCnt = 0;
 
 	
@@ -38,14 +30,19 @@ public class RockScissPaper {
 			int userRCP = sc.nextInt();
 			
 			int computerNum = rd.nextInt(2);
-			judgeWDL(userRCP, computerNum);
-			
-			gameCnt++;
-			if(userRCP == 3) {
-				System.out.println("현재 전적 : " + gameCnt + " 전 " + winCnt + " 승 " + drawCnt + " 무 " + loseCnt + " 패");
+			if(userRCP >= 0 && userRCP <= 2) {
+				printCom(computerNum);
+				judgeWDL(userRCP, computerNum);
+				gameCnt++;
+			} else if(userRCP == 3){
+				System.out.println("전적 : " + gameCnt + " 전 " + winCnt + " 승 " + drawCnt + " 무 " + loseCnt + " 패");
 				System.out.println("게임이 종료됩니다.");
 				isExit = false;
+			} else {
+				System.out.println("잘못 입력했습니다. 다시 입력해주세요.");
+				
 			}
+			
 		}
 
 	}
@@ -71,7 +68,6 @@ public class RockScissPaper {
 	
 
 	//컴퓨터 가위, 바위, 보 출력해주는 메소드
-
 	public void printCom(int com) {
 		if(com == 0) {
 			System.out.println("컴퓨터는 가위를 냈습니다.");
