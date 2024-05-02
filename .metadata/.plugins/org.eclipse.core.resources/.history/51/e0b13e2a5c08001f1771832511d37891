@@ -1,0 +1,41 @@
+package chap11_abstraction.tv;
+
+public class SamsungTv extends Tv {
+
+	@Override
+	public void powerOn() {
+		// TODO Auto-generated method stub
+		System.out.println("SamsungTv를 켭니다.");
+	}
+
+	@Override
+	public void powerOff() {
+		// TODO Auto-generated method stub
+		System.out.println("SamsungTv를 끕니다.");
+	}
+
+	@Override
+	public void operate(int channel) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void moveTo(int channel) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void channelUp() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void channelDown() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

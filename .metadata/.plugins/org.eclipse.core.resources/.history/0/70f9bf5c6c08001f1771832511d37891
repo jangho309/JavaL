@@ -1,0 +1,5 @@
+package homwork04.advance;
+
+public abstract class Employee {
+
+}

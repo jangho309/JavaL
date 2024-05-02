@@ -1,0 +1,46 @@
+package homwork04.advance;
+
+public class ArrayUtility2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	// s1과 s2를 연결한 새로운 배열 리턴
+	static int[] concat(int[] s1, int[] s2) {
+		int[] concateArr = new int[s1.length + s2.length];
+		for(int i = 0; i < s1.length; i++) {
+			concateArr[i] = s1[i];
+		}
+		for(int j = s1.length; j < s1.length + s2.length; j++) {
+			concateArr[j] = s2[j - s1.length];
+		}
+		return concateArr;
+	};
+	// s1에서 s2배열의 숫자를 모두 삭제한 새로운 배열 리턴
+	// {1, 2, 3, 4, 5, 6, 7, 8},     {3, 6, 8} -> {1, 2, 4, 5, 7}
+	static int[] remove(int[] s1, int[] s2) {
+		Object[] isExistedArr = new Object[s1.length];
+		int removeSize = 0;
+		for(int i = 0; i < s1.length; i++) {
+			for(int j = 0; j < s2.length; j++) {
+				if(s1[i] == s2[j]) {
+					isExistedArr[i] = 'X';
+					removeSize++;
+				} else {
+					isExistedArr[i] = s1[i];
+				}
+			}
+		}
+		int[] rtnRemoveArr = new int[s1.length - removeSize];
+		int passNum = 0;
+		for(int k = 0; k < isExistedArr.length; k++) {
+			if(!isExistedArr[k].equals('X')) {
+				rtnRemoveArr[k - passNum] = (int) isExistedArr[k];
+			} else {
+				passNum++;
+			}
+		}
+		return rtnRemoveArr;
+	};
+}

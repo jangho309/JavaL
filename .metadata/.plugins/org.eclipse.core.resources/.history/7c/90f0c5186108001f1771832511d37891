@@ -1,0 +1,10 @@
+package homwork04.basic;
+
+// 포유류 클래스
+public class Mammalia {
+
+	double height;
+	double kg;
+	
+	public void 
+}

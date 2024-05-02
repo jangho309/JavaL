@@ -6,9 +6,9 @@ public class _05_PlayNumbaseball {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		Numbaseball nb = new Numbaseball();
+		Numbaseball nb = new Numbaseball();
 		
-//		nb.start();
+		nb.start();
 		
 		for(int i = 0; i < 10; i++) {
 			if(i == 2 || i == 5) {

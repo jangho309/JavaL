@@ -1,0 +1,6 @@
+package homwork04.basic;
+
+public class ChildB extends Parent{
+
+	String fingerPrint;
+}

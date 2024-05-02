@@ -1,0 +1,9 @@
+package homwork04.basic;
+
+// 포유류 클래스
+public class Mammalia {
+
+	public Mammalia() {
+		
+	}
+}

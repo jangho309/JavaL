@@ -1,0 +1,22 @@
+package chap11_abstraction.board;
+
+public class FreeBoard extends Board {
+	String attachFile;
+
+	@Override
+	public void post() {
+		// TODO Auto-generated method stub
+		System.out.println("자유게시판 작성글을 등록합니다.");
+		System.out.println(this.attachFile + "파일을 업로드합니다.");
+	}
+	@Override
+	public void delete() {
+		// TODO Auto-generated method stub
+		System.out.println("자유게시판 작성글을 삭제합니다.");
+	}
+	@Override
+	public void modify() {
+		// TODO Auto-generated method stub
+		System.out.println("자유게시판 작성글을 수정합니다.");
+	}
+}

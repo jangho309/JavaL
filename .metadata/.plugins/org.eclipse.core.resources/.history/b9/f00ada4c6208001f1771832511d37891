@@ -1,0 +1,14 @@
+package homwork04.basic;
+
+// 고양이과 클래스
+public class Feline extends Mammalia {
+
+	public Feline() {
+		
+	}
+	
+	// 고양이과는 혀로 털을 관리합니다.
+	public void grooming() {
+		
+	}
+}

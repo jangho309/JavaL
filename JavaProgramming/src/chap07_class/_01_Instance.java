@@ -10,7 +10,7 @@ public class _01_Instance {
 		// 그래서 클래스 사용자가 직접 정의하는 자료형이라고도 한다.
 		Car car;
 		
-		int a = 10;
+//		int a = 10;
 		
 		// 2. 정의한 클래스 타입의 값을 만들어주는 작업을 인스턴스화라고 한다.
 		// 인스턴스화를 진행하게 되면 클래스내의 선언된 변수들과 메소드들이 메모리에 올라가고
@@ -49,11 +49,11 @@ public class _01_Instance {
 		
 		car3.printCarInfo();
 		
-		Car car4;
-		
-		String str = "aaaa";
-		
-		car4 = new Car();
+//		Car car4;
+//		
+//		String str = "aaaa";
+//		
+//		car4 = new Car();
 	}
 	
 	// 클래스는 타입의 역할도 하기때문에 메소드의 리턴타입이나 매개변수로도 사용할 수 있다.
