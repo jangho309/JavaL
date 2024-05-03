@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="chap06_method.calc.ReturnCalculator"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
     <fullyQualifiedTypeName name="chap06_method.calc.AccessModifierCalculator"/>
@@ -17,8 +16,40 @@
     <fullyQualifiedTypeName name="chap07_class.car.CarConstructor"/>
     <fullyQualifiedTypeName name="chap07_class.circle.Circle"/>
     <fullyQualifiedTypeName name="chap07_class.student.Student"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="chap07_class.game.Numbaseball"/>
     <fullyQualifiedTypeName name="homework3.basic.User"/>
+    <fullyQualifiedTypeName name="homework03.basic.Rect"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="homework03.middle.PhoneInfo"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="chap08_static.car.CarStatic"/>
+    <fullyQualifiedTypeName name="chap09_inherit.car.Car"/>
+    <fullyQualifiedTypeName name="chap09_inherit.car.HyundaiCarInherit"/>
+    <fullyQualifiedTypeName name="chap09_inherit.car.KiaCarInherit"/>
+    <fullyQualifiedTypeName name="chap09_inherit.animal.Animal"/>
+    <fullyQualifiedTypeName name="chap09_inherit.animal.Bird"/>
+    <fullyQualifiedTypeName name="chap09_inherit.animal.Tiger"/>
+    <fullyQualifiedTypeName name="chap09_inherit.board.Board"/>
+    <fullyQualifiedTypeName name="chap09_inherit.board.FreeBoard"/>
+    <fullyQualifiedTypeName name="chap09_inherit.board.NoticeBoard"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="chap10_polymorphism.tv.Tv"/>
+    <fullyQualifiedTypeName name="chap10_polymorphism.tv.LgTv"/>
+    <fullyQualifiedTypeName name="chap10_polymorphism.tv.SamsungTv"/>
+    <fullyQualifiedTypeName name="chap10_polymorphism.member.Member"/>
+    <fullyQualifiedTypeName name="chap11_abstraction.academy.Academy"/>
+    <fullyQualifiedTypeName name="chap11_abstraction.academy.ComAcademy"/>
+    <fullyQualifiedTypeName name="chap11_abstraction.academy.EnglishAcademy"/>
+    <fullyQualifiedTypeName name="chap11_abstraction.board.Board"/>
+    <fullyQualifiedTypeName name="chap11_abstraction.board.FreeBoard"/>
+    <fullyQualifiedTypeName name="chap11_abstraction.board.NoticeBoard"/>
+    <fullyQualifiedTypeName name="chap11_abstraction.tv.LgTv"/>
+    <fullyQualifiedTypeName name="chap11_abstraction.tv.Tv"/>
+    <fullyQualifiedTypeName name="chap11_abstraction.tv.SamsungTv"/>
+    <fullyQualifiedTypeName name="homwork04.basic.Mammalia"/>
+    <fullyQualifiedTypeName name="homwork04.basic.Feline"/>
+    <fullyQualifiedTypeName name="homwork04.basic.Parent"/>
+    <fullyQualifiedTypeName name="homwork04.basic.worker.Worker"/>
+    <fullyQualifiedTypeName name="homwork04.advance.employee.Employee"/>
 </qualifiedTypeNameHistroy>

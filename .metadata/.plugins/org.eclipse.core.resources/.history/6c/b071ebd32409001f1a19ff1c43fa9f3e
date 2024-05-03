@@ -1,0 +1,24 @@
+package homework05.advance;
+
+public class MathStudent extends CommonStat implements Student{
+
+	@Override
+	public void saveInfo() {
+		// TODO Auto-generated method stub
+		MathStudent mathStudent = new CommonStat("홍길동", "수학", 90);
+	}
+
+	@Override
+	public void printInfo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public double getAvg() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+
+}

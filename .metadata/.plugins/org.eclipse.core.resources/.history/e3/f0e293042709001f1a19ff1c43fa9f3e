@@ -1,0 +1,19 @@
+package homework05.middle;
+
+public class StringIndexChangeNum {
+	
+	public String strIdxChangeNum(String inputStr) {
+		String rtnStr = "";
+		for(int i = 0; i < inputStr.length(); i++) {
+			
+			if(i > 0 && i % 3 == 0) {
+				rtnStr += "3";
+			} else if(i > 0 && i % 5 == 0) {
+				rtnStr += "5";
+			} else {
+				rtnStr += inputStr.charAt(i);
+			}
+		}
+		return rtnStr;
+	}
+}

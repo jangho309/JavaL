@@ -1,0 +1,5 @@
+package homework05.advance;
+
+public interface Student {
+
+}

@@ -1,0 +1,16 @@
+package homework05.advance;
+
+public class AdvanceMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MathStudent mathStu = new MathStudent();
+		
+		mathStu.saveInfo();
+		System.out.println("------------------------------");
+		mathStu.printInfo();
+		System.out.println("------------------------------");
+		mathStu.getAvg();
+	}
+
+}

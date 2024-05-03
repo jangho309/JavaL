@@ -1,0 +1,20 @@
+package homework05.advance;
+
+public class CommonStat {
+	
+	String name;
+	String[] subject;
+	int[] finalExamScore;
+	
+	public CommonStat() {
+		
+	}
+	
+	public CommonStat(String name, String[] subject, int[] finalExamScore) {
+		this.name = name;
+		this.subject = subject;
+		this.finalExamScore = finalExamScore;
+	}
+	
+	
+}
