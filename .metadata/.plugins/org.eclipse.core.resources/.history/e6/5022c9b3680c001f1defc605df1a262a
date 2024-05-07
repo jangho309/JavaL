@@ -1,0 +1,17 @@
+package homework05.advance;
+
+public class CommonStat {
+	
+	public int sno;
+	public String name;
+	public String[] subject;
+	public int[] finalExamScore;
+	
+	
+	public CommonStat(int sno, String name) {
+		this.sno = sno;
+		this.name = name;
+	}
+	
+	
+}

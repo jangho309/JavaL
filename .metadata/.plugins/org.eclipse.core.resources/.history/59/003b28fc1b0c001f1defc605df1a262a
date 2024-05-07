@@ -1,0 +1,7 @@
+package chap13_nestedclass.nestedclass;
+
+// 중첩클래스는 클래스안에 다른 클래스
+// 중첩클래스를 감싸고 있는 클래스를 외부 클래스라고 부르며 중첩클래스는 내부클래스라고도 한다.
+public class NestedClass {
+
+}

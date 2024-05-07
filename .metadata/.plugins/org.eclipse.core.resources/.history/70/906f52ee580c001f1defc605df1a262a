@@ -1,0 +1,27 @@
+package homework06.middle;
+
+import java.util.Scanner;
+
+public class Middle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		printMiddle(sc);
+	}
+
+	// 1. 사용자가 입력한 문자열을 받아서 가운데 문자를 출력하세요. 
+    // 문자열의 길이가 짝수면 가운데 두 글자 출력. ex) 비둘기 -> 둘, 비트캠프 -> 트캠
+	public static void printMiddle(Scanner sc) {
+		System.out.println("문자열을 입력해 주세요.");
+		String inputText = sc.nextLine();
+		
+		if(inputText.length() % 2 == 0) {
+			System.out.println("첫 번재 index : " + (inputText.length() / 2 - 1));
+			System.out.println("두 번재 index : " + inputText.length() / 2);
+			System.out.println(inputText.substring((inputText.length() / 2) - 1, inputText.length() / 2));
+		} else {
+			System.out.println(inputText.charAt(inputText.length() / 2));
+		}
+	}
+}

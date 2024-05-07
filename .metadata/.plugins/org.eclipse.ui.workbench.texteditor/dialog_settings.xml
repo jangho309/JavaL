@@ -6,8 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="isExistedArr"/>
+		<item key="selection" value="replace"/>
 		<list key="findhistory">
+			<item value="replace"/>
+			<item value="dup"/>
+			<item value="dupl"/>
+			<item value="duplicate"/>
 			<item value="isExistedIndex"/>
 			<item value="isExistedArr"/>
 			<item value="QLED"/>
@@ -19,8 +23,6 @@
 			<item value="System.in"/>
 			<item value="in"/>
 			<item value="comparison"/>
-			<item value="equals"/>
-			<item value="String"/>
 		</list>
 		<list key="replacehistory">
 			<item value="isExistedArr"/>
