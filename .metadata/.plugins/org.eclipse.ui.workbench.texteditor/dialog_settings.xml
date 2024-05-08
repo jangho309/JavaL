@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="replace"/>
+		<item key="selection" value="round"/>
 		<list key="findhistory">
+			<item value="round"/>
 			<item value="replace"/>
 			<item value="dup"/>
 			<item value="dupl"/>
@@ -22,7 +23,6 @@
 			<item value="nextint"/>
 			<item value="System.in"/>
 			<item value="in"/>
-			<item value="comparison"/>
 		</list>
 		<list key="replacehistory">
 			<item value="isExistedArr"/>
