@@ -6,8 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="round"/>
+		<item key="selection" value="private Cal"/>
 		<list key="findhistory">
+			<item value="private Cal"/>
+			<item value="getInstance"/>
+			<item value="SUNDAY"/>
+			<item value="StringBuilder"/>
+			<item value="equals"/>
 			<item value="round"/>
 			<item value="replace"/>
 			<item value="dup"/>
@@ -18,11 +23,6 @@
 			<item value="QLED"/>
 			<item value="println"/>
 			<item value="out"/>
-			<item value="strike"/>
-			<item value="nextLine"/>
-			<item value="nextint"/>
-			<item value="System.in"/>
-			<item value="in"/>
 		</list>
 		<list key="replacehistory">
 			<item value="isExistedArr"/>

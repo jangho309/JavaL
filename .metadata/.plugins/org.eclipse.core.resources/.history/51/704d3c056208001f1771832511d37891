@@ -1,9 +1,0 @@
-package homwork04.basic;
-
-// 고양이과 클래스
-public class Feline extends Mammalia {
-
-	public Feline() {
-		
-	}
-}

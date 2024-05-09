@@ -1,8 +1,0 @@
-package chap07_class;
-
-public class _02_Constructor {
-
-	public static void main(String[] args) {
-		
-	}
-}
