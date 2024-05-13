@@ -1,0 +1,10 @@
+package homework10.middle;
+
+import java.util.List;
+
+public class GenericSplit<T> {
+
+	public List<T> TList;
+	
+	
+}

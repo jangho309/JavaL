@@ -1,0 +1,7 @@
+package chap19_generic.ramyun;
+
+// 제네릭 클래스: 현재 클래스에서 사용할 서브클래스 또는 참조클래스의 타입을 미리 지정하지 않고
+// 객체를 생성해서 사용할 때 지정해서 사용할 수 있는 기능
+public class Ramyun<T> {
+
+}

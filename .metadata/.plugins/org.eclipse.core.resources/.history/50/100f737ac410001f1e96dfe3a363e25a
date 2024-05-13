@@ -1,0 +1,41 @@
+package homework09.advance;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Scanner;
+
+public class Middle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 1. 학생이름을 key로 시험점수를 value로 가지는 Map<String, Integer>를 생성하고
+		// 4명의 학생 데이터를 입력한 후 4명 중 최고 점을 맞은 학생의 이름과 점수을 출력하세요.(이름 : 90)
+		Map<String, Integer> studentScoreMap = new HashMap<String, Integer>();
+		Scanner sc = new Scanner(System.in);
+		
+		String studentName = "";
+		int studentScore = 0;
+		for(int i = 0; i < 4; i++) {
+			System.out.println((i + 1) + "번째 학생이름을 입력해 주세요.");
+			studentName = sc.nextLine();
+			System.out.println((i + 1) + "번째 학생점수를 입력해 주세요.");
+			studentScore = sc.nextInt();
+			studentScoreMap.put(studentName, studentScore);
+		}
+		
+		int maxScore = 0;
+		String maxStuentName = "";
+		
+		for(Entry<String, Integer> studentEntry : studentScoreMap.entrySet()) {
+			if(studentEntry.getValue() > maxScore) {
+				maxScore = studentEntry.getValue();
+				maxStuentName = studentEntry.getKey();
+			}
+		}
+		
+		System.out.println("최고점수는 : "+ maxScore + ", 학생이름은 : " + maxStuentName + "입니다.");
+		sc.close();
+	}
+
+}

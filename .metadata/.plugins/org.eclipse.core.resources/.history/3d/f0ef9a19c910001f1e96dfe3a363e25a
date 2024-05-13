@@ -1,0 +1,6 @@
+package chap19_generic.ramyun;
+
+// 제네릭 클래스
+public class Ramyun<T> {
+
+}

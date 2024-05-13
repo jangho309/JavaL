@@ -1,0 +1,10 @@
+package homework10.basic;
+
+public class Basic {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 1. 멤버변수로 private T t를 가지면서 getT(), setT() 메소드를 갖는 제네릭클래스 GenericCla를 생성하세요.
+	}
+
+}

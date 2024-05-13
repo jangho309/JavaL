@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="private Cal"/>
+		<item key="selection" value="Date"/>
 		<list key="findhistory">
+			<item value="Date"/>
 			<item value="private Cal"/>
 			<item value="getInstance"/>
 			<item value="SUNDAY"/>
@@ -22,7 +23,6 @@
 			<item value="isExistedArr"/>
 			<item value="QLED"/>
 			<item value="println"/>
-			<item value="out"/>
 		</list>
 		<list key="replacehistory">
 			<item value="isExistedArr"/>

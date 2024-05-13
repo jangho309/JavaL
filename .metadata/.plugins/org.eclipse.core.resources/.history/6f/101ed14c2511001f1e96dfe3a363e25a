@@ -1,0 +1,36 @@
+package homework10.middle;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class GenericSplit<T> {
+
+	public List<T> TList;
+	
+	private List<T> TListPart1;
+	private List<T> TListPart2;
+	
+	public List<T> getTListPart1() {
+		return TListPart1;
+	}
+	public List<T> getTListPart2() {
+		return TListPart2;
+	}
+	
+	public void splitList(List<T> paramList) {
+		int size = paramList.size();
+		int partSize1 = 0;
+		int partSize2 = 0;
+		if(size % 2 == 0) {
+			partSize1 = size / 2;
+			partSize2 = size - (size / 2);
+		} else {
+			partSize1 = size / 2 + 1;
+			partSize2 = size - (size / 2) - 1;
+		}
+		
+		System.out.println("size : " + size);
+		System.out.println("partSize1 : " + partSize1);
+		System.out.println("partSize2 : " + partSize2);
+	}
+}
