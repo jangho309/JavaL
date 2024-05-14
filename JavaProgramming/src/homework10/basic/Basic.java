@@ -37,8 +37,12 @@ public class Basic {
 		inputMap.put("sseee2", 0.23195753333);
 		printOverTen(inputMap);
 		
-		// 7.
-		notifyFood("한국");
+		// 7. KOR, CHI, JAP, USA 네 개의 상수를 갖는 enum을 생성하고 첫 번째 값은 "나라 한글명"이고 두 번째 값은 "대표음식"으로 지정한다.
+		// public void notifyFood(String country) 메소드를 만들고 country 값과 동일한 한글명인 나라의 음식을 다음과 같이 출력하도록 구현하세요.
+		// country에 "중국"이 들어오면 "중국의 대표음식은 짜장면입니다."라고 나오도록 하세요. (각 국의 음식은 한국=불고기, 중국=짜장면, 일본=초밥, 미국=햄버거)
+		Country[] countryArr = Country.values();
+		
+		countryArr[0].notifyFood("일본");
 	}
 
     // 2. public static <T> String add(T t1, T t2) 제네릭 메소드를 정의하고 매개변수로 어떤 값이 들어오던 문자열 결합연산이 돼서 스트링값으로 리턴하도록 만드세요.

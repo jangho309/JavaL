@@ -93,15 +93,15 @@ public class Middle {
 	
 	// 4. Map<Integer, Integer>을 매개변수로 받아서 List<Entry<K, V>>를 리턴하는 메소드 getOverHundr를 구현하세요.
 	// 매개변수 Map에는 key는 50~60까지 value는 15~25까지 넣어주고 키와 밸류의 곱셈의 결과가 1000을 넘는 Entry만 List에 저장합니다.
-	public static <K, V> List<Entry<K, V>> getOverHundr(Map<Integer, Integer> paramMap){
-		Iterator<Entry<Integer, Integer>> paramIterator = paramMap.entrySet().iterator();
+	public static <K, V> List<Entry<K, V>> getOverHundr(Map<K, V> paramMap){
+		Iterator<Entry<K, V>> paramIterator = paramMap.entrySet().iterator();
 		List<Entry<K, V>> entryList = new ArrayList<Map.Entry<K, V>>();
 		
 		while(paramIterator.hasNext()) {
-			Entry<Integer, Integer> tempEntry = paramIterator.next();
+			Entry<K, V> tempEntry = paramIterator.next();
 			
-			if(tempEntry.getKey() * tempEntry.getValue() > 1000) {
-				Entry<K, V> addEntry = (Entry<K, V>) tempEntry;
+			if((int) tempEntry.getKey() * (int) tempEntry.getValue() > 1000) {
+				Entry<K, V> addEntry = tempEntry;
 				entryList.add(addEntry);
 			}
 		}

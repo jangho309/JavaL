@@ -13,24 +13,13 @@ public class Advance {
 		System.out.println("년도를 입력해 주세요.");
 		int inputYear = sc.nextInt();
 		
-		System.out.println(inputYear + "년도 1, 2, 3, 4, 5월의 일수의 총합은 : " + sumDays(inputYear) + "일입니다.");
+		TweleveMonth[] tweleveMonths = TweleveMonth.values();
+		
+		System.out.println(inputYear + "년도 1, 2, 3, 4, 5월의 일수의 총합은 : " +
+				tweleveMonths[0].sumDays(inputYear) + "일입니다.");
+		
 		sc.close();
 		
 	}
 
-	public static int sumDays(int year) {
-		int daySum = 0;
-		TweleveMonth[] twelveMonth = TweleveMonth.values();
-		if(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
-			for(int i = 0; i < 5; i++) {
-				daySum += twelveMonth[i].getLeapYearDay();
-			}
-		} else {
-			for(int i = 0; i < 5; i++) {
-				daySum += twelveMonth[i].getCommonYearDay();
-			}
-		}
-		
-		return daySum;
-	}
 }

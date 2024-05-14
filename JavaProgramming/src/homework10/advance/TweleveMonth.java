@@ -30,4 +30,21 @@ public enum TweleveMonth {
 		this.commonYearDay = commonYearDay;
 		this.leapYearDay = leapYearDay;
 	}
+	
+	public int sumDays(int year) {
+		int daySum = 0;
+		TweleveMonth[] twelveMonth = TweleveMonth.values();
+		
+		if(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
+			for(int i = 0; i < 5; i++) {
+				daySum += twelveMonth[i].getLeapYearDay();
+			}
+		} else {
+			for(int i = 0; i < 5; i++) {
+				daySum += twelveMonth[i].getCommonYearDay();
+			}
+		}
+		
+		return daySum;
+	}
 }
