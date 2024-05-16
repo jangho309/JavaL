@@ -1,0 +1,23 @@
+package homework13.middle;
+
+public class IntArrUtils {
+
+	public static int getMax(int[] intArr) {
+		int returnValue = maxOrMinOrMid(intArr, irr -> {
+			return 0;
+		});
+		return returnValue;
+	}
+	
+	public static int getMax(int[] intArr) {
+			
+		}
+	
+	public static int getMax(int[] intArr) {
+		
+	}
+	
+	public int maxOrMinOrMid(int[] intArr, MaxMinMid maxMinMid) {
+		return maxMinMid.maxOrMinOrMid(intArr);
+	}
+}

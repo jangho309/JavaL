@@ -1,0 +1,6 @@
+package homework13.middle;
+
+@FunctionalInterface
+public interface ReverseStringBuilderUtils {
+	StringBuilder reverseSb(StringBuilder sourceSb);
+}

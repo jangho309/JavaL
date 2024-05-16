@@ -1,0 +1,28 @@
+package chap22_lambda;
+
+import java.util.Scanner;
+
+import chap22_lambda.reference.Convertcase;
+
+public class _09_ReferenceMethodEx01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void printConvertCase(Convertcase convertcase) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("환전할 원화를 입력하세요,");
+		int money = sc.nextInt();
+		
+		System.out.println("문자열을 입력해주세요.");
+		String inputStr = sc.nextLine();
+		
+		
+		int returnMoney = convertcase.convert(money, inputStr.charAt(0));
+		System.out.println("환전한 금액 " + inputStr + money + "입니다.");
+		
+	}
+}

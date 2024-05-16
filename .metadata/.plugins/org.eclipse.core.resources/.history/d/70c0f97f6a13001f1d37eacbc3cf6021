@@ -1,0 +1,16 @@
+package homework13.middle;
+
+public class IntArrUtils {
+
+	public static int getMax(int[] intArr) {
+		
+	}
+	
+	public static int getMax(int[] intArr) {
+			
+		}
+	
+	public static int getMax(int[] intArr) {
+		
+	}
+}

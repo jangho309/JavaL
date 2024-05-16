@@ -1,8 +1,0 @@
-package homework05.advance;
-
-public interface Student {
-
-	public void saveInfo(int index, String subject, int score);
-	public void printInfo();
-	public double getAvg();
-}
