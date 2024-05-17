@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Date"/>
+		<item key="selection" value="avanCarList"/>
 		<list key="findhistory">
+			<item value="avanCar"/>
 			<item value="Date"/>
 			<item value="private Cal"/>
 			<item value="getInstance"/>
@@ -22,9 +23,9 @@
 			<item value="isExistedIndex"/>
 			<item value="isExistedArr"/>
 			<item value="QLED"/>
-			<item value="println"/>
 		</list>
 		<list key="replacehistory">
+			<item value="avanCarList"/>
 			<item value="isExistedArr"/>
 			<item value="isExistedIndex"/>
 			<item value="OLED"/>
