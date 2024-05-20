@@ -39,15 +39,22 @@ public class Middle {
 		Scanner sc = new Scanner(System.in);
 		for(int i = 1; i <= 10; i++) {
 			System.out.println(i + "번째 캐릭터문자를 입력해주세요.(한자리 문자만)");
-			charList.add(sc.nextLine().charAt(0));
+			String tempStr = sc.nextLine();
+			if(tempStr.length() > 1) {
+				System.out.println("해당 글자는 맨 앞글자만 바꿔줍니다.");
+			} else {
+				charList.add(tempStr.charAt(0));
+			}
 		}
 		
 		charList.stream()
 				.forEach(ch -> {
 					if(Character.isUpperCase(ch)) {
 						ch = Character.toLowerCase(ch);
-					} else {
+					} else if(Character.isLowerCase(ch)) {
 						ch = Character.toUpperCase(ch);
+					} else {
+						System.out.println("잘못된 문자입니다.");
 					}
 					System.out.println(ch);
 				});

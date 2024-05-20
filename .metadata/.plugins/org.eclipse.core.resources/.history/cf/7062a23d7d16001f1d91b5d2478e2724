@@ -1,0 +1,63 @@
+package homework12.number01;
+
+import java.util.Scanner;
+
+public class NumberOne {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		// 1. 사용자가 입력한 이름, 나이, 성별을 출력하세요.
+		VariableNumberOne(sc);
+		
+		// 2. 사용자가 입력한 두 개의 정수와 문자(char) 연산자를 받아 
+		// 두 정수로 해당 연산을 진행한 결과를 출력하세요.
+
+		
+	}
+	
+	// 1. 사용자가 입력한 이름, 나이, 성별을 출력하세요.
+	public static void VariableNumberOne(Scanner sc) {
+		System.out.println("이름을 입력해 주세요.");
+		String inputName = sc.nextLine();
+		
+		System.out.println("나이를 입력해 주세요.");
+		int inputAge = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.println("성별을 입력해 주세요.");
+		String inputGender = sc.nextLine();
+		
+		System.out.println("입력하신 이름은 : " + inputName + ", 나이는 : " + inputAge + ", 성별은 : " + inputGender + "입니다.");
+	}
+
+	// 2. 사용자가 입력한 두 개의 정수와 문자(char) 연산자를 받아 
+	// 두 정수로 해당 연산을 진행한 결과를 출력하세요.
+	public static void VariableNumberTwo(Scanner sc) {
+		System.out.println("첫 번째 숫자를 입력해 주세요.");
+		int num1 = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.println("두 번째 숫자를 입력해 주세요.");
+		int num2 = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.println("연산자 문자를 입력해 주세요.");
+		char operator = sc.nextLine().charAt(0);
+		
+		if(operator == '+') {
+			System.out.println("+의 결과 : " + (num1 + num2));
+		} else if(operator == '-') {
+			System.out.println("-의 결과 : " + (num1 - num2));
+		} else if(operator == '*') {
+			System.out.println("*의 결과 : " + (num1 * num2));
+		} else if(operator == '/') {
+			System.out.println("/의 결과 : " + (num1 / num2));
+		} else if(operator == '%') {
+			System.out.println("%의 결과 : " + (num1 % num2));
+		} else {
+			System.out.println("입력하신 " + operator + "는 이용할 수 없습니다.");
+		}
+	}
+}

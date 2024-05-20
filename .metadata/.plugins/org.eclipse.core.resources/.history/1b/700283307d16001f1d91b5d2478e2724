@@ -1,0 +1,25 @@
+package homework12.number01;
+
+import java.util.Scanner;
+
+public class NumberOne {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		// 1. 사용자가 입력한 이름, 나이, 성별을 출력하세요.
+		System.out.println("이름을 입력해 주세요.");
+		String inputName = sc.nextLine();
+		
+		System.out.println("나이를 입력해 주세요.");
+		int inputAge = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.println("성별을 입력해 주세요.");
+		String inputGender = sc.nextLine();
+		
+		System.out.println("입력하신 이름은 : " + inputName);
+	}
+
+}

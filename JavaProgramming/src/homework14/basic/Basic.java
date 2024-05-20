@@ -35,6 +35,7 @@ public class Basic {
 //					.forEach(num -> System.out.println(num));
 		
 		// 3. 사용자가 입력한 문자열 10개를 저장하는 List<String> strList를 만들고 스트림을 이용해서 문자열에 영문자가 포함된 문자열만 뽑아서 스트림을 만들고 출력하세요.
+		// 정규식 패턴 0~9 피하고 특수문자 피하는 방법이 떠오르지 않음 강사님처럼 하나씩 판별하는 것이 맞았다.
 		List<String> strList = new ArrayList<>();
 		
 		for(int i = 1; i <= 10; i++) {
@@ -43,8 +44,22 @@ public class Basic {
 		}
 		
 		strList.stream()
-			   .filter(inputStr -> !inputStr.matches("^*[0-9]*$"))
-			   .forEach(input -> System.out.println("영문자 포함한 입력값 : " + input));
+		.filter(str -> {
+			for(int i = 0; i < str.length(); i++) {
+				if(str.charAt(i) >= 'A' && str.charAt(i) <= 'Z' ||
+				str.charAt(i) >= 'a' && str.charAt(i) <= 'z') {
+					return true;
+				}
+			}
+			return false;
+		})
+		.forEach(str -> 
+			System.out.print(str + ", "));
+//		strList.stream()
+//			   .filter(inputStr -> !inputStr.matches("^*[0-9]*$"))
+//			   .forEach(input -> System.out.println("영문자 포함한 입력값 : " + input));
+	
+		sc.close();
 	}
 
 }
