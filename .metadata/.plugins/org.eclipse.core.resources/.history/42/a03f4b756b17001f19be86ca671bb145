@@ -1,0 +1,28 @@
+package homework12.number01;
+
+import java.util.Scanner;
+
+public class Operator {
+	// 2. 2. int형 변수 20을 증감연산자를 사용해서 다음과 같은 순서로 출력되도록 구현하세요.
+	// 21, 22, 22, 21, 20, 20, 20, 마지막 변수의 값(증감연산자 없이) : 20
+	public static void operatorNumberTwo() {
+		int num = 20;
+		System.out.println(++num);
+		System.out.println(++num);
+		System.out.println(num--);
+		System.out.println(num--);
+		System.out.println(num--);
+		System.out.println(++num);
+		System.out.println(num);
+	}
+	// 3. 사용자가 입력한 정수가 2와 7의 공배수면 "2와 7의 공배수"라고 출력하고 아니면
+	// "2와 7의 공배수가 아님"이라고 출력하세요.
+	public static void operatorNumberThree(Scanner sc) {
+		int num = sc.nextInt();
+		if(num % 2 == 0 && num % 7 == 0) {
+			System.out.println("입력한 정수는 2와 7의 공배수 입니다.");
+		} else {
+			System.out.println("입력한 정수는 2와 7의 공배수가 아닙니다.");
+		}
+	}
+}

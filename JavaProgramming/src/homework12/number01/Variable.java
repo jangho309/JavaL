@@ -178,14 +178,32 @@ public class Variable {
 		
 		int numCnt = 0;
 		
+		int checkNum = 0;
 		for(int j = 0; j < findNum.length; j++) {
-			int boxNum = 2;
-			while(boxNum == findNum[j]) {
-				if(findNum[j] % boxNum == 0) {
-					
+			if(findNum[j] == 2) {
+				System.out.println("소수 판별 숫자 : " + findNum[j]);
+				numCnt++;
+			} else {
+				for(int k = 2; k < findNum[j]; k++) {
+					if(findNum[j] % k == 0) {
+						checkNum++;
+					}
+					// k가 2부터 1씩 증가해 findNum가 k로 나눴을때 나머지가 0이 되면 그 다음 findNum을 가져오기 위해 break
+					if(checkNum > 0) {
+//						System.out.println("k : " + k + "findNum[ " + j + "] = " + findNum[j]);
+						checkNum = 0;
+						break;
+					} else {
+						if(checkNum == 0 && k == findNum[j] - 1) {
+							System.out.println("소수 판별 숫자 : " + findNum[j]);
+							numCnt++;
+						}
+					}
 				}
+				
 			}
-			
 		}
+		
+		System.out.println("입력하신 10개의 정수 중 소수의 개수는 : " + numCnt + "개 입니다.");
 	}
 }
