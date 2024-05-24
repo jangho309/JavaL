@@ -1,7 +1,0 @@
-package homework13.basic;
-
-@FunctionalInterface
-public interface PrintNumber {
-
-	public printEnvenNum(int[] numArr);
-}

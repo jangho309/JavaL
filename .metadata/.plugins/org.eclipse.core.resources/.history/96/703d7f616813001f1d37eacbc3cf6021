@@ -1,6 +1,0 @@
-package homework13.middle;
-
-@FunctionalInterface
-public interface AppendStringBuilderUtils {
-	StringBuilder appendSb(StringBuilder sb1, StringBuilder sb2);
-}

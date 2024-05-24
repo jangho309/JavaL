@@ -1,5 +1,0 @@
-package homework13.middle;
-
-public interface AppendStringBuilderUtils {
-	StringBuilder appendSb(StringBuilder sb1, StringBuilder sb2);
-}

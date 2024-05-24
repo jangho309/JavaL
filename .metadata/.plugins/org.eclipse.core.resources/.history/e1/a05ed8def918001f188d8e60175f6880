@@ -1,0 +1,10 @@
+package homework12.number02;
+
+public class NumberTwo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

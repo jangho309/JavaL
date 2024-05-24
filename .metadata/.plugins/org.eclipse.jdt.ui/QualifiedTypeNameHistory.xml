@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="homework13.middle.MaxMinMid"/>
-    <fullyQualifiedTypeName name="homework13.middle.IntArrUtils"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.util.Set"/>
-    <fullyQualifiedTypeName name="java.util.HashSet"/>
-    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-    <fullyQualifiedTypeName name="chap21_multithread._07_NonSyncSharedObj"/>
-    <fullyQualifiedTypeName name="java.net.URISyntaxException"/>
-    <fullyQualifiedTypeName name="chap23_stream._07_FilesToStream"/>
-    <fullyQualifiedTypeName name="java.util.stream.LongStream"/>
-    <fullyQualifiedTypeName name="java.util.stream.DoubleStream"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
-    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
-    <fullyQualifiedTypeName name="chap23_stream.car.HyundaiCar"/>
     <fullyQualifiedTypeName name="chap23_stream.card.CreditCard"/>
     <fullyQualifiedTypeName name="java.awt.CardLayout"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
@@ -41,9 +26,7 @@
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="chap24_dataio.car.Car"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
     <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
@@ -57,7 +40,24 @@
     <fullyQualifiedTypeName name="java.nio.charset.Charset"/>
     <fullyQualifiedTypeName name="homework12.number01.Variable"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="homework12.number01.Operator"/>
+    <fullyQualifiedTypeName name="chap21_multithread._07_NonSyncSharedObj"/>
+    <fullyQualifiedTypeName name="homework12.number01.Conditional"/>
+    <fullyQualifiedTypeName name="homework12.number01.Loop"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="homework12.number02.NumberArray"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="homework12.number02.Student"/>
+    <fullyQualifiedTypeName name="homework12.number02.Book"/>
+    <fullyQualifiedTypeName name="homework12.number02.MethodClass"/>
+    <fullyQualifiedTypeName name="homework12.number02.Circle"/>
+    <fullyQualifiedTypeName name="homework12.number02.Account"/>
+    <fullyQualifiedTypeName name="homework12.number02.Add"/>
 </qualifiedTypeNameHistroy>

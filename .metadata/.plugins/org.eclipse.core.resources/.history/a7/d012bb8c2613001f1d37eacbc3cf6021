@@ -1,5 +1,0 @@
-package chap22_lambda.basiclambda;
-
-public interface Mul {
-
-}

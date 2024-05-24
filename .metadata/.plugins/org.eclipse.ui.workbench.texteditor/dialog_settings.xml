@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="PropertyLoader"/>
+		<item key="selection" value="소수"/>
 		<list key="findhistory">
+			<item value="소수"/>
 			<item value="propertyLoader"/>
 			<item value="avanCar"/>
 			<item value="Date"/>
@@ -22,7 +23,6 @@
 			<item value="dupl"/>
 			<item value="duplicate"/>
 			<item value="isExistedIndex"/>
-			<item value="isExistedArr"/>
 		</list>
 		<list key="replacehistory">
 			<item value="avanCarList"/>
