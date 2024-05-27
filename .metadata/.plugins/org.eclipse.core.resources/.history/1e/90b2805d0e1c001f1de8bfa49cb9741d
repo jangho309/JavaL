@@ -1,0 +1,21 @@
+package homework12.number02;
+
+public class CoupangMan {
+	private double workhour;
+	private int timeBySalary;
+	
+	public double getWorkhour() {
+		return workhour;
+	}
+	public void setWorkhour(double workhour) {
+		this.workhour = workhour;
+	}
+	public int getTimeBySalary() {
+		return timeBySalary;
+	}
+	public void setTimeBySalary(int timeBySalary) {
+		this.timeBySalary = timeBySalary;
+	}
+	
+	
+}
