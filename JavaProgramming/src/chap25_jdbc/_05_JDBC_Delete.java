@@ -1,0 +1,48 @@
+package chap25_jdbc;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class _05_JDBC_Delete {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Connection conn = null;
+		PreparedStatement ps = null;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		try {
+			System.out.println("삭제할 학번을 입력해주세요.");
+			String sno = sc.nextLine();
+			
+			conn = JDBCUtil.getConnection(
+					"jdbc:oracle:thin:@127.0.0.1:1521:xe", "c##study", "!dkdlxl1234"
+			);
+			
+			String deleteStudentQuery = "DELETE FROM STUDENT"
+					+ "					  WHERE SNO = ?";
+			
+			ps = conn.prepareStatement(deleteStudentQuery);
+			ps.setString(1, sno);
+			
+			int result = ps.executeUpdate();
+			if(result != 0) {
+				System.out.println(result + "명의 학생정보가 삭제되었습니다.");
+			} else {
+				System.out.println("삭제된 학번이 없습니다.");
+			}
+		} catch(SQLException se) {
+			System.out.println(se.getMessage());
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		} finally {
+			JDBCUtil.close(ps, conn);
+			sc.close();
+		}
+		
+	}
+
+}

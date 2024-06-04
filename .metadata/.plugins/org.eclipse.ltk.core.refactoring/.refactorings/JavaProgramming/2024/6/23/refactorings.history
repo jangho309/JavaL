@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;chap25_jdbc._05_JDBC_DELETE&apos; to &apos;_05_JDBC_Delete&apos;&#x0D;&#x0A;- Original project: &apos;JavaProgramming&apos;&#x0D;&#x0A;- Original element: &apos;chap25_jdbc._05_JDBC_DELETE&apos;&#x0D;&#x0A;- Renamed element: &apos;chap25_jdbc._05_JDBC_Delete&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;_05_JDBC_DELETE&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;chap25_jdbc{_05_JDBC_DELETE.java[_05_JDBC_DELETE" matchStrategy="1" name="_05_JDBC_Delete" qualified="false" references="true" similarDeclarations="false" stamp="1717473253533" textual="false" version="1.0"/>
+</session>

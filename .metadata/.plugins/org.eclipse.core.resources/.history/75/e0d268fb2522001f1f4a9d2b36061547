@@ -1,0 +1,73 @@
+package chap25_jdbc;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class _04_JDBC_Update {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 사용자가 입력한 sno에 해당하는 학생의 정보를
+		// 사용자각 입력한 내용으로 JDBC를 이용해서 수정
+		Connection conn = null;
+		PreparedStatement ps = null;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		try {
+			System.out.println("수정할 학번을 입력해주세요.");
+			String sno = sc.nextLine();
+			
+			System.out.println("수정할 이름을 입력하세요.");
+			String sname = sc.nextLine();
+			System.out.println("수정할 성별을 입력하세요.");
+			String sex = sc.nextLine();
+			System.out.println("수정할 학년을 입력하세요.");
+			int syear = sc.nextInt();
+			sc.nextLine();
+			System.out.println("수정할 전공을 입력하세요.");
+			String major = sc.nextLine();
+			System.out.println("수정할 평점을 입력하세요.");
+			double avr = sc.nextDouble();
+			
+			conn = JDBCUtil.getConnection(
+					"jdbc:oracle:thin:@127.0.0.1:1521:xe", "c##study", "!dkdlxl1234"
+			);
+			
+			String updateStudentInfo = "UPDATE STUDENT"
+					+ "					   SET SNAME = ?"
+					+ "						 , SEX = ?"
+					+ "						 , SYEAR = ?"
+					+ "						 , MAJOR = ?"
+					+ "						 , AVR = ?"
+					+ "					 WHERE SNO = ?";
+			
+			ps = conn.prepareStatement(updateStudentInfo);
+			ps.setString(1, sname);
+			ps.setString(2, sex);
+			ps.setInt(3, syear);
+			ps.setString(4, major);
+			ps.setDouble(5, avr);
+			ps.setString(6, sno);
+			
+			int result = ps.executeUpdate();
+			
+			if(result != 0) {
+				System.out.println(result + "개 학생의 정보가 수정되었습니다.");
+			} else {
+				System.out.println("수정된 사항이 없습니다.");
+			}
+		} catch(SQLException se) {
+			System.out.println(se.getMessage());
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		} finally {
+			JDBCUtil.close(ps, conn);
+			sc.close();
+		}
+		
+	}
+
+}

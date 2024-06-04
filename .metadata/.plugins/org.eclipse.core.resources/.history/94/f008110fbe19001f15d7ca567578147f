@@ -1,9 +1,0 @@
-package homework12.number02;
-
-public class MethodClass {
-
-	// 3. 두 문자열을 전달받아 합쳐진 새로운 문자열을 리턴하는 메소드를 구현하세요.
-	public static String concatStr(String s1, String s2) {
-		return s1 + s2;
-	}
-}

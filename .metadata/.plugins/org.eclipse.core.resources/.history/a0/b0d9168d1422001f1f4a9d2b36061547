@@ -1,0 +1,10 @@
+package chap25_jdbc;
+
+public class _02_JDBD_Select {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
